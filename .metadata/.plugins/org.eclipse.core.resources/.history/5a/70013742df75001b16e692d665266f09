@@ -1,0 +1,39 @@
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s = new String("Tsanta");
+		System.out.println("Position" + s.charAt(4));
+		System.out.println("Concatenation de deux caractère : ");
+		String prenom = "Tiantsoa";
+		int numero = 7;
+		String nom = s + " " + prenom + " " + numero;
+		System.out.println(nom);
+		System.out.println("Exemple d'application");
+		
+		final char car = 'e';
+		int i, posCar;
+		int nbCar = 0;
+		String ch;
+		System.out.print("donner un mot : ");
+		ch = Clavier.lireString();
+		i = 0;
+		do 
+		{
+			posCar = ch.indexOf(car, i); // Recharche à partir du rang i
+			if (posCar >= 0) {
+				nbCar++;
+				i = posCar+1;
+			}
+		}
+		while (posCar >= 0);
+		System.out.println("votre mot comporte " + nbCar + " fois le caractere" + car);
+		
+		String s1 = "Bonjour";
+		String s2 = "Bonjour";
+		if (s1 == s2) {System.out.println("Egale");}
+		else {System.out.println("Different");}
+	}
+	
+}
+	

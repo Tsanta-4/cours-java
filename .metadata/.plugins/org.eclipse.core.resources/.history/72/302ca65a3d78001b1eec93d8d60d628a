@@ -1,0 +1,16 @@
+class Ecrit extends Thread {
+	// Methodes et constructor
+	public Ecrit (String texte, int nb) {
+		this.texte = texte;
+		this.nb = nb;
+	}
+	public void run () {
+		for (int i = 0; i < nb; i++) {
+			System.out.println(texte);
+		}
+	}
+	
+	// Les attributs
+	private String texte;
+	private int nb;
+}

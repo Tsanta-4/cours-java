@@ -1,0 +1,8 @@
+class Ecrit extends Thread {
+	// Methodes et constructor
+	public Ecrit (String texte, int nb) {
+		
+	}
+	
+	// Les attributs
+}

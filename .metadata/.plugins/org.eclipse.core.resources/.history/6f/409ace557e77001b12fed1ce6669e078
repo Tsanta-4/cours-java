@@ -1,0 +1,14 @@
+public class Main {
+	public static void main(String[] args) {
+		String s = "Tsantanirina";
+		String b = "3";
+		byte by = Byte.parseByte(b);
+		// Process
+		System.out.println(s.charAt(8));
+		System.out.println(s.indexOf("a", 3));
+		System.out.println(by);
+		
+	}
+	
+}
+	

@@ -1,0 +1,64 @@
+public class Main {
+	public static void main(String[] args) {
+		System.out.println("Test 1");
+		String ch1 = "bonjour";
+		String ch2 = "bonjour";
+		if (ch1 == ch2) {
+			System.out.println("egales");
+		}
+		else {
+			System.out.println("differentes");
+		}
+		
+		System.out.println("Test 2");
+		String c1 = "bonjour";
+		String c2 = "bon";
+		c2 += "jour";
+		if (c1 == c2) {
+			System.out.println("egales");
+		}
+		else {
+			System.out.println("differentes");
+		}
+		
+		System.out.println("Test 3");
+		String cc1 = "bonjour1", cc2;
+		int n = 1;
+		cc2 = "bonjour" + n;
+		if (cc1 == cc2) {
+			System.out.println("egales");
+		}
+		else {
+			System.out.println("differentes");
+		}
+		System.out.println("Test 4");
+		String s1 = "hello";
+		String s2 = "hellO";
+		if (s1.equalsIgnoreCase(s2)) {
+			System.out.println("les 2 chaines sont les mêmes");
+		}
+		else {
+			System.out.println("Les 2 chaines ne sont pas les mêmes");
+		}
+		System.out.println("Triage de tableau de String");
+		String[] tab = {"e","d","c","b","a"};
+		triString(tab);
+	}
+	public static void triString(String[] tab) {
+		String temp;
+		for (int i = 0; i < tab.length-1; i++) {
+			for (int j = i; j < tab.length; j++) {
+				if (tab[i].compareTo(tab[j]) > 0) {
+					temp = tab[i];
+					tab[i] = tab[j];
+					tab[j] = temp;
+				}
+			}
+		}
+		for (int i = 0; i < tab.length; i++) {
+			System.out.println(tab[i]);
+		}
+	}
+	
+}
+	

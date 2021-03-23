@@ -1,0 +1,9 @@
+public class Main {
+	public static void main(String[] args) {
+		String s = "Tsantanirina";
+		System.out.println(s.charAt(8));
+		
+	}
+	
+}
+	

@@ -1,0 +1,14 @@
+/*
+ * author @RATSIMBAZAFY Tiantsoa Tsantanirina
+ * fevrier 2021
+ * Les Threads
+ */
+
+
+public class main {
+	public static void main(String[] args) {
+		System.out.println("-----------Les Threads---------");
+		Ecrit e1 = new Ecrit ("bonjour", 10);
+		
+	}
+}
